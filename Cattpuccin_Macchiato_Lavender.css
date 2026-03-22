@@ -1,0 +1,33 @@
+/*
+@name Catppuccin Macchiato
+@author Raptor
+@version 1.0
+@description Catpuccin Macchiato in Lavender
+*/
+/* Scroll bar */
+.scr-bar-c_var\(--md-sys-color-primary\)_transparent {scrollbar-color: #b7bdf8 transparent;}
+/* Send Button Icon */
+.--colour_var\(--md-sys-color-on-secondary-container\) { --colour: #82910;}
+/* UI Coloration */
+.bg_var\(--md-sys-color-surface-container-low\){background:#1e2030;}
+.bg_var\(--md-sys-color-surface-container-lowest\){background:#24273a}
+.bg_var\(--md-sys-color-surface-container-highest\),
+.bg_var\(--md-sys-color-surface-container-high\),
+.bg_var\(--md-sys-color-surface\){background-color:#181926!important}.group:hover{background-color:#363a4f!important}
+.bg_var\(--md-sys-color-surface-container\){background:#24273a!important}
+.bg_var\(--md-sys-color-primary-container\){background:#363a4f!important}
+.bg_var\(--md-sys-color-primary\) {background: #494d64;}
+.fill_var\(--colour\){fill: #b7bdf8;}
+.c_var\(--colour\) {color: #b7bdf8;}
+.c_var\(--md-sys-color-on-primary\){color: #cdd6f4;}
+.fill_var\(--md-sys-color-on-primary\){color: #cdd6f4;}
+.p_var\(--gap-md\){background: #6e738d;}
+.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1{background-color:#181926!important}
+.bg_\#0d1117 {background: #1e2030;}
+.--color_var\(--md-sys-color-on-primary-container\) > div:nth-child(3) > div:nth-child(1) {color: #b7bdf8;}
+.--color_var\(--md-sys-color-on-primary-container\) > span:nth-child(2){color: #b7bdf8;}
+.--color_var\(--md-sys-color-outline\){--color: #5b6078;}
+.bg_var\(--md-sys-color-inverse-surface\) {background: #1e2030;color: #cad3f5;}
+.bg_var\(--md-sys-color-secondary-container\){background-color:#363A4F!important;color: #cad3f5;}
+.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1[style*="background: var(--md-sys-color-surface-container-highest)"],[style*="background: var(--md-sys-color-surface-container"]{background:#24273a!important}
+.top_var\(--gap-md\){background:#0000;}

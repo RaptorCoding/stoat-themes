@@ -1,0 +1,82 @@
+/*
+@name Square UI
+@author Raptor
+@version 1.0
+@description Removes rounding to everything except scroll bar
+*/
+ .bdr_var\(--borderRadius-xl\) {
+    border-radius: 0px;
+  }
+.bdr_var\(--borderRadius-md\) {
+    border-radius: 0;
+  }
+ .bdr-bl_var\(--borderRadius-lg\) {
+    border-bottom-left-radius: 0;
+  }
+  .bdr-tl_var\(--borderRadius-lg\) {
+    border-top-left-radius: 0;
+  }
+  .bdr_var\(--borderRadius-md\) {
+    border-radius: 0;
+  }
+    .bdr_var\(--borderRadius-lg\) {
+    border-radius: 0;
+  }
+    .bdr_var\(--borderRadius-full\) {
+    border-radius: 0;
+  }
+.pe_var\(--gap-md\) {
+    --borderRadius-md: 0;
+    --borderRadius-xl: 0;
+  }
+.bdr_48px {
+    border-radius: 0;
+  }
+  .bdr_var\(--borderRadius-xs\) {
+    border-radius: 0;
+  }
+  .bdr_28px {
+    border-radius: 0;
+  }
+  .flex_1_1_800px {
+    --borderRadius-none: 0px;
+  --borderRadius-xs: 0;
+  --borderRadius-sm: 0;
+  --borderRadius-md: 0;
+  --borderRadius-lg: 0;
+  --borderRadius-li: 0;
+  --borderRadius-xl: 0;
+  --borderRadius-xli: 0;
+  --borderRadius-xxl: 0;
+  }
+    .bdr-es_30px {
+    border-end-start-radius: 0px;
+  }
+    .bdr-ss_30px {
+    border-start-start-radius: 0px;
+  }
+  .bdr_50\% {
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .bdr_var\(--borderRadius-circle\) {
+    border-radius: 0;
+  }
+  .bdr_8px {
+    border-radius: 0;
+  }
+    .bdr_48px_var\(--borderRadius-md\)_var\(--borderRadius-md\)_48px {
+    border-radius: 0;
+  }
+    .bdr_var\(--borderRadius-md\)_48px_48px_var\(--borderRadius-md\) {
+    border-radius: 0;
+  }
+  .bdr_var\(--borderRadius-lg\) {
+    border-radius: 0;
+  }
+   .bdr_64px {
+    border-radius: 0;
+  }
