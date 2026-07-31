@@ -1,33 +1,69 @@
 /*
-@name Catppuccin Macchiato
-@author Raptor
-@version 1.0
-@description Catpuccin Macchiato in Lavender
-*/
-/* Scroll bar */
-.scr-bar-c_var\(--md-sys-color-primary\)_transparent {scrollbar-color: #b7bdf8 transparent;}
-/* Send Button Icon */
-.--colour_var\(--md-sys-color-on-secondary-container\) { --colour: #82910;}
-/* UI Coloration */
-.bg_var\(--md-sys-color-surface-container-low\){background:#1e2030;}
-.bg_var\(--md-sys-color-surface-container-lowest\){background:#24273a}
-.bg_var\(--md-sys-color-surface-container-highest\),
-.bg_var\(--md-sys-color-surface-container-high\),
-.bg_var\(--md-sys-color-surface\){background-color:#181926!important}.group:hover{background-color:#363a4f!important}
-.bg_var\(--md-sys-color-surface-container\){background:#24273a!important}
-.bg_var\(--md-sys-color-primary-container\){background:#363a4f!important}
-.bg_var\(--md-sys-color-primary\) {background: #494d64;}
-.fill_var\(--colour\){fill: #b7bdf8;}
-.c_var\(--colour\) {color: #b7bdf8;}
-.c_var\(--md-sys-color-on-primary\){color: #cdd6f4;}
-.fill_var\(--md-sys-color-on-primary\){color: #cdd6f4;}
-.p_var\(--gap-md\){background: #6e738d;}
-.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1{background-color:#181926!important}
-.bg_\#0d1117 {background: #1e2030;}
-.--color_var\(--md-sys-color-on-primary-container\) > div:nth-child(3) > div:nth-child(1) {color: #b7bdf8;}
-.--color_var\(--md-sys-color-on-primary-container\) > span:nth-child(2){color: #b7bdf8;}
-.--color_var\(--md-sys-color-outline\){--color: #5b6078;}
-.bg_var\(--md-sys-color-inverse-surface\) {background: #1e2030;color: #cad3f5;}
-.bg_var\(--md-sys-color-secondary-container\){background-color:#363A4F!important;color: #cad3f5;}
-.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1[style*="background: var(--md-sys-color-surface-container-highest)"],[style*="background: var(--md-sys-color-surface-container"]{background:#24273a!important}
-.top_var\(--gap-md\){background:#0000;}
+ * @name Catppuccin Macchiato
+ * @author Raptor
+ * @version 2.0 (Revamp update)
+ * @description Catpuccin Macchiato in Lavender
+ */
+
+*{
+    currentColor: black;
+}
+
+#root { /* Main chatting space*/
+    --md-sys-color-on-surface: #cad3f5; /*Most text in the app (including logo)*/
+    --md-sys-color-outline: #4B4F65; /*Text*/
+    --md-sys-color-surface-container-low: #1E2030; /*Background of the member list in DMs*/
+    --md-sys-color-primary: #b7bdf8; /*Scroll bar and highlights (accent color)*/
+    --md-sys-color-on-primary-container: #b7bdf8; /* Member selected text*/
+    --md-sys-color-surface-container-lowest: #181926; /* Background of DMs */
+    --md-sys-color-surface-container-high:#181926; /* Server list, titlebar, etc...*/
+    --md-sys-color-on-surface-variant: #b7bdf8; /* Call buttons, Accent Color*/
+    --md-sys-color-on-secondary-container: #b7bdf8; /* Send button, Accent color */
+    --md-sys-color-on-primary: #363a4f; /* Send button but active*/
+    --md-sys-color-error: rgb(237, 135, 150); /*Theme delete buttons and errors */
+    --md-sys-color-outline-variant: #6e738d;
+}
+@layer utilities {
+    *{
+        --md-sys-color-surface-dim: #181926;
+        --md-sys-color-error: rgb(237, 135, 150);
+        --md-sys-color-primary-container: #363A4F; /*Member selected color*/
+        --md-sys-color-secondary-container: #363a4f; /*Hover menu background color*/
+        --md-sys-color-on-secondary-container:#b7bdf8 ; /*Icons in hover menu (Accent Color)*/
+        --md-sys-color-on-surface-variant: #a5adcb; /*Settings subtext for emoji things*/
+    }
+    .iYYmAA { /*Border for text box (Accent*/
+        border-width:1px;
+        border-color:#b7bdf8;
+    }
+}
+
+#floating { /*Pop ups and settings*/
+    --md-sys-color-surface-container-lowest: rgb(24, 25, 38);
+    --md-sys-color-primary: #b7bdf8; /* Accent Color */
+    --md-sys-color-on-primary-container: #ff0000; /* ????? */
+    --md-sys-color-surface-container-low: #1E2030; /* Background color settings */
+    --md-sys-color-surface-container-highest: #181926; /* Side of settings color*/
+    --md-sys-color-on-surface: #cad3f5; /* Text and setting icons */
+    --md-sys-color-outline: #6e738d; /*Changes the setting category titles*/
+    /* Language menu fix */
+    --md-sys-color-tertiary: #b7bdf8; /*Highlighted drop down option (Accent color)*/
+    --md-sys-color-tertiary-container: #6e738d; /* Non highlighted drop down option*/
+    --md-sys-color-on-tertiary: #6e738d; /* Highlighted drop down option text (Overlay 0) */
+    --md-sys-color-on-tertiary-container: #b7bdf8; /* Non highlighted drop down option text */
+    --mdui-color-primary: 183, 189, 248; /* Sliders and buttons */
+    --mdui-color-surface-container-highest: 54, 58, 79; /* Background of sliders */
+    --md-sys-color-on-primary: #181926; /* Logos in appearance page */
+    --md-sys-color-on-surface-variant: #a5adcb;
+    --mdui-color-on-surface-variant: 183, 189, 248; /* Bar under text boxes */
+    --md-sys-color-secondary: rgb(183, 189, 248);
+    --md-sys-color-on-secondary: #24273a;
+}
+
+.group:hover { /*Selection overlay*/
+  background-color: #24273a !important;
+}
+.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1[style*="background: var(--md-sys-color-surface-container-highest)"],
+[style*="background: var(--md-sys-color-surface-container"] {
+  background: #24273a !important;
+} /* For plugin titlebars */
