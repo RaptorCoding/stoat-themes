@@ -1,0 +1,74 @@
+/*
+ * @name Catppuccin Mocha
+ * @author Raptor
+ * @version 2.1 (Revamp update)
+ * @description Catpuccin Mocha (Change color in CSS editor)
+ */
+/*Hello ! The default theme color is lavender, you can change this in the section right under this. This is a Mocha theme, consult the Mocha color pallete for better results https://catppuccin.com/palette/. Thanks for reading */
+*{
+    --accent-color-of-choice-hex: #b4befe;
+    --accent-color-of-choice-rgb: 180, 190, 254; /*No rgb(R, G, B) has to be R, G, B*/
+}
+
+#root { /* Main chatting space*/
+    --md-sys-color-on-surface: #cdd6f4; /*Most text in the app (including logo)*/
+    --md-sys-color-outline: #6c7086; /*Text*/
+    --md-sys-color-surface-container-low: #181825; /*Background of the member list in DMs*/
+    --md-sys-color-primary: var(--accent-color-of-choice-hex); /*Scroll bar and highlights (accent color)*/
+    --md-sys-color-on-primary-container: var(--accent-color-of-choice-hex); /* Member selected text*/
+    --md-sys-color-surface-container-lowest: #11111b; /* Background of DMs */
+    --md-sys-color-on-surface-variant: var(--accent-color-of-choice-hex); /* Call buttons, Accent Color*/
+    --md-sys-color-on-secondary-container: var(--accent-color-of-choice-hex); /* Send button, Accent color */
+    --md-sys-color-on-primary: #313244; /* Send button but active*/
+    --md-sys-color-error: #f38ba8; /*Theme delete buttons and errors */
+    --md-sys-color-outline-variant: #6c7086;
+}
+@layer utilities {
+    *{
+        --md-sys-color-surface-dim: #11111b;
+        --md-sys-color-error: #f38ba8;
+        --md-sys-color-primary-container: #313244; /*Member selected color*/
+        --md-sys-color-secondary-container: #313244; /*Hover menu background color*/
+        --md-sys-color-on-secondary-container:var(--accent-color-of-choice-hex) ; /*Icons in hover menu (Accent Color)*/
+        --md-sys-color-on-surface-variant: #a6adc8; /*Settings subtext for emoji things*/
+        --md-sys-color-surface-container-high: #11111b;  /* Server list, titlebar, etc...*/
+        --md-sys-color-surface-container-highest: #11111b;
+        --md-sys-color-surface-container: #313244;
+    }
+
+
+    .iYYmAA { /*Border for text box (Accent*/
+        border-width:1px;
+        border-color: var(--accent-color-of-choice-hex);
+    }
+}
+
+#floating { /*Pop ups and settings*/
+    --md-sys-color-surface-container-lowest: #11111b;
+    --md-sys-color-primary: var(--accent-color-of-choice-hex); /* Accent Color */
+    --md-sys-color-on-primary-container: #ff0000; /* ????? */
+    --md-sys-color-surface-container-low: #181825; /* Background color settings */
+    --md-sys-color-surface-container-highest: #181926; /* Side of settings color*/
+    --md-sys-color-on-surface: #cdd6f4; /* Text and setting icons */
+    --md-sys-color-outline: #6c7086; /*Changes the setting category titles*/
+    /* Language menu fix */
+    --md-sys-color-tertiary: var(--accent-color-of-choice-hex); /*Highlighted drop down option (Accent color)*/
+    --md-sys-color-tertiary-container: #6c7086; /* Non highlighted drop down option*/
+    --md-sys-color-on-tertiary: #6c7086; /* Highlighted drop down option text (Overlay 0) */
+    --md-sys-color-on-tertiary-container: var(--accent-color-of-choice-hex); /* Non highlighted drop down option text */
+    --mdui-color-primary: var(--accent-color-of-choice-rgb); /* Sliders and buttons */
+    --mdui-color-surface-container-highest: 49, 50, 68; /* Background of sliders */
+    --md-sys-color-on-primary: #11111b; /* Logos in appearance page */
+    --md-sys-color-on-surface-variant: #a6adc8;
+    --mdui-color-on-surface-variant: var(--accent-color-of-choice-rgb); /* Bar under text boxes */
+    --md-sys-color-secondary: rgb(var(--accent-color-of-choice-rgb));
+    --md-sys-color-on-secondary: #1e1e2e;
+}
+
+.group:hover { /*Selection overlay*/
+  background-color: #1e1e2e !important;
+}
+.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1[style*="background: var(--md-sys-color-surface-container-highest)"],
+[style*="background: var(--md-sys-color-surface-container"] {
+  background: #1e1e2e !important;
+} /* For plugin titlebars */

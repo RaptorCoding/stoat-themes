@@ -1,0 +1,74 @@
+/*
+ * @name Catppuccin Latte
+ * @author Raptor
+ * @version 2.1 (Revamp update)
+ * @description Catpuccin Latte (Change color in CSS editor)
+ */
+/*Hello ! The default theme color is lavender, you can change this in the section right under this. This is a Latte theme, consult the Latte color pallete for better results https://catppuccin.com/palette/. Thanks for reading */
+*{
+    --accent-color-of-choice-hex: #7287fd;
+    --accent-color-of-choice-rgb: 114, 135, 253; /*No rgb(R, G, B) has to be R, G, B*/
+}
+
+#root { /* Main chatting space*/
+    --md-sys-color-on-surface: #4c4f69; /*Most text in the app (including logo)*/
+    --md-sys-color-outline: #9ca0b0; /*Text*/
+    --md-sys-color-surface-container-low: #e6e9ef; /*Background of the member list in DMs*/
+    --md-sys-color-primary: var(--accent-color-of-choice-hex); /*Scroll bar and highlights (accent color)*/
+    --md-sys-color-on-primary-container: var(--accent-color-of-choice-hex); /* Member selected text*/
+    --md-sys-color-surface-container-lowest: #dce0e8; /* Background of DMs */
+    --md-sys-color-on-surface-variant: var(--accent-color-of-choice-hex); /* Call buttons, Accent Color*/
+    --md-sys-color-on-secondary-container: var(--accent-color-of-choice-hex); /* Send button, Accent color */
+    --md-sys-color-on-primary: #ccd0da; /* Send button but active*/
+    --md-sys-color-error: rgb(210, 15, 57); /*Theme delete buttons and errors */
+    --md-sys-color-outline-variant: #9ca0b0;
+}
+@layer utilities {
+    *{
+        --md-sys-color-surface-dim: #dce0e8;
+        --md-sys-color-error: rgb(210, 15, 57);
+        --md-sys-color-primary-container: #ccd0da; /*Member selected color*/
+        --md-sys-color-secondary-container: #ccd0da; /*Hover menu background color*/
+        --md-sys-color-on-secondary-container:var(--accent-color-of-choice-hex) ; /*Icons in hover menu (Accent Color)*/
+        --md-sys-color-on-surface-variant: #6c6f85; /*Settings subtext for emoji things*/
+        --md-sys-color-surface-container-high: #dce0e8;  /* Server list, titlebar, etc...*/
+        --md-sys-color-surface-container-highest: #dce0e8;
+        --md-sys-color-surface-container: #ccd0da;
+    }
+
+
+    .iYYmAA { /*Border for text box (Accent*/
+        border-width:1px;
+        border-color: var(--accent-color-of-choice-hex);
+    }
+}
+
+#floating { /*Pop ups and settings*/
+    --md-sys-color-surface-container-lowest: rgb(220, 224, 232);
+    --md-sys-color-primary: var(--accent-color-of-choice-hex); /* Accent Color */
+    --md-sys-color-on-primary-container: #ff0000; /* ????? */
+    --md-sys-color-surface-container-low: #e6e9ef; /* Background color settings */
+    --md-sys-color-surface-container-highest: #dce0e8; /* Side of settings color*/
+    --md-sys-color-on-surface: #4c4f69; /* Text and setting icons */
+    --md-sys-color-outline: #9ca0b0; /*Changes the setting category titles*/
+    /* Language menu fix */
+    --md-sys-color-tertiary: var(--accent-color-of-choice-hex); /*Highlighted drop down option (Accent color)*/
+    --md-sys-color-tertiary-container: #9ca0b0; /* Non highlighted drop down option*/
+    --md-sys-color-on-tertiary: #9ca0b0; /* Highlighted drop down option text (Overlay 0) */
+    --md-sys-color-on-tertiary-container: var(--accent-color-of-choice-hex); /* Non highlighted drop down option text */
+    --mdui-color-primary: var(--accent-color-of-choice-rgb); /* Sliders and buttons */
+    --mdui-color-surface-container-highest: 54, 58, 79; /* Background of sliders */
+    --md-sys-color-on-primary: #dce0e8; /* Logos in appearance page */
+    --md-sys-color-on-surface-variant: #a5adcb;
+    --mdui-color-on-surface-variant: var(--accent-color-of-choice-rgb); /* Bar under text boxes */
+    --md-sys-color-secondary: rgb(var(--accent-color-of-choice-rgb));
+    --md-sys-color-on-secondary: #dce0e8;
+}
+
+.group:hover { /*Selection overlay*/
+  background-color: #dce0e8 !important;
+}
+.will-change_transform.scr-bar-w_none.ov-y_scroll.flex-g_1[style*="background: var(--md-sys-color-surface-container-highest)"],
+[style*="background: var(--md-sys-color-surface-container"] {
+  background: var(--accent-color-of-choice-hex) !important;
+} /* For plugin titlebars */
