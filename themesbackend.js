@@ -6,26 +6,6 @@
       "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
       "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Macchiato.css"
     },
-
-    {
-      "name": "Cattpuccin Latte",
-      "author": "raptor#0151",
-      "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Latte.css"
-    },
-
-    {
-      "name": "Cattpuccin Mocha",
-      "author": "raptor#0151",
-      "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Mocha.css"
-    },
-    {
-      "name": "Cattpuccin Frappé",
-      "author": "raptor#0151",
-      "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Frappé.css"
-    },
     {
       "name": "Remove rounding",
       "author": "raptor#0151",
