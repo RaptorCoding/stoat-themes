@@ -4,7 +4,7 @@
       "name": "Cattpuccin Macchiato",
       "author": "raptor#0151",
       "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Macchiato.css"
+      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Catppuccin_Macchiato.css"
     },
     {
       "name": "Remove rounding",
@@ -16,19 +16,19 @@
       "name": "Cattpuccin Latte",
       "author": "raptor#0151",
       "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Latte.css"
+      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Catppuccin_Latte.css"
     },
     {
       "name": "Cattpuccin Mocha",
       "author": "raptor#0151",
       "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Mocha.css"
+      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Catppuccin_Mocha.css"
     },
     {
       "name": "Cattpuccin Frappé",
       "author": "raptor#0151",
       "preview": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/preview.png",
-      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Cattpuccin_Frappé.css"
+      "download": "https://raw.githubusercontent.com/RaptorCoding/stoat-themes/refs/heads/main/Catppuccin_Frapp%C3%A9.css"
     }
   ]
 }
